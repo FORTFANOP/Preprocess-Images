@@ -1,4 +1,6 @@
 # Library for processing the images in a jiffy
+# Created by Joel John Mathew a.k.a 'FORTFANOP' (www.github.com/FORTFANOP)
+# Please Star this repo if you find this helpful
 
 
 try:
