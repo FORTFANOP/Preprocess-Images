@@ -95,22 +95,6 @@ class PreprocessImage(object):
         return X_Data,Y_Data
 
     def load_dataset(self):
-
-        try:
-            # Read the Data from Pickle Object
-            X_Temp = open('X_Data','rb')
-            X_Data = pickle.load(X_Temp)
-
-            Y_Temp = open('Y_Data','rb')
-            Y_Data = pickle.load(Y_Temp)
-
-            print('Reading Dataset from Pickle Object')
-
-            return X_Data,Y_Data
-
-        except:
-            print('Could not find the Pickle File ')
-            print('Loading File and Dataset...')
-
-            X_Data,Y_Data = self.pickle_image()
-            return X_Data,Y_Data
+        print('Loading File and Dataset...')
+        X_Data,Y_Data = self.pickle_image()
+        return X_Data,Y_Data
